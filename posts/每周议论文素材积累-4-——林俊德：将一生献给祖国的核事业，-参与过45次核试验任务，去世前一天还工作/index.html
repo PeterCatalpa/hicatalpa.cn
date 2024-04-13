@@ -1,0 +1,772 @@
+
+  <script type="text/javascript">
+    (function () {
+      var dayStr = '04/04';
+      if (/^\d{1,2}\/\d{1,2}$/.test(dayStr)) {
+        dayStr = new Date().getFullYear() + '/' + dayStr;
+      }
+      if (!/^\d{4}\/\d{1,2}\/\d{1,2}$/.test(dayStr)) {
+        return ;
+      }
+      var day = new Date(dayStr);
+      var now = new Date();
+      var isMemorialDay = now.getFullYear() === day.getFullYear() && now.getMonth() === day.getMonth() && now.getDate() === day.getDate();
+      if (isMemorialDay) {
+        if (document.all) {
+          window.style = 'html {     -webkit-filter: grayscale(100%); /* webkit */     -moz-filter: grayscale(100%); /* firefox */     -ms-filter: grayscale(100%); /* ie9 */     -o-filter: grayscale(100%); /* opera */     filter: grayscale(100%);     filter:progid:DXImageTransform.Microsoft.BasicImage(grayscale=1); filter:gray; /* ie9- */   }';
+          document.createStyleSheet('javascript:style');
+        } else {
+          var style = document.createElement('style');
+          style.type = 'text/css';
+          style.innerHTML = 'html {     -webkit-filter: grayscale(100%); /* webkit */     -moz-filter: grayscale(100%); /* firefox */     -ms-filter: grayscale(100%); /* ie9 */     -o-filter: grayscale(100%); /* opera */     filter: grayscale(100%);     filter:progid:DXImageTransform.Microsoft.BasicImage(grayscale=1); filter:gray; /* ie9- */   }';
+          document.getElementsByTagName('HEAD').item(0).appendChild(style);
+        }
+      }
+    })();
+  </script>
+  
+
+<!DOCTYPE html>
+<html lang="en" data-default-color-scheme=auto>
+
+
+
+<head><!-- hexo injector head_begin start --><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1234567890123456" crossorigin="anonymous"></script><!-- hexo injector head_begin end -->
+  <meta charset="UTF-8">
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/fluid.png">
+  <link rel="icon" href="/img/fluid.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+  
+  <meta name="theme-color" content="#2f4154">
+  <meta name="author" content="梓树">
+  <meta name="keywords" content="">
+  
+    <meta name="description" content="原文再现林俊德，是一位将军，也是一位院士。他一辈子隐姓埋名，52年坚守在罗布泊，参与了中国全部的45次核试验任务。  林俊德，1938年出生，福建永春人。1955年，17岁的他考入浙江大学机械系。由于家境贫穷，大学全是靠党和政府助学金读完的。为此，林俊德常对儿女们说，我能有今天，离不开党和国家的培养。做人，一定要懂得感恩，要赤诚报国。 1960年，从浙江大学毕业的林俊德参军入伍，从此隐姓埋名，成为">
+<meta property="og:type" content="article">
+<meta property="og:title" content="每周议论文素材积累(4)——林俊德：将一生献给祖国的核事业， 参与过45次核试验任务，去世前一天还工作">
+<meta property="og:url" content="https://hicatalpa.cn/posts/%E6%AF%8F%E5%91%A8%E8%AE%AE%E8%AE%BA%E6%96%87%E7%B4%A0%E6%9D%90%E7%A7%AF%E7%B4%AF-4-%E2%80%94%E2%80%94%E6%9E%97%E4%BF%8A%E5%BE%B7%EF%BC%9A%E5%B0%86%E4%B8%80%E7%94%9F%E7%8C%AE%E7%BB%99%E7%A5%96%E5%9B%BD%E7%9A%84%E6%A0%B8%E4%BA%8B%E4%B8%9A%EF%BC%8C-%E5%8F%82%E4%B8%8E%E8%BF%8745%E6%AC%A1%E6%A0%B8%E8%AF%95%E9%AA%8C%E4%BB%BB%E5%8A%A1%EF%BC%8C%E5%8E%BB%E4%B8%96%E5%89%8D%E4%B8%80%E5%A4%A9%E8%BF%98%E5%B7%A5%E4%BD%9C/index.html">
+<meta property="og:site_name" content="Catalpa">
+<meta property="og:description" content="原文再现林俊德，是一位将军，也是一位院士。他一辈子隐姓埋名，52年坚守在罗布泊，参与了中国全部的45次核试验任务。  林俊德，1938年出生，福建永春人。1955年，17岁的他考入浙江大学机械系。由于家境贫穷，大学全是靠党和政府助学金读完的。为此，林俊德常对儿女们说，我能有今天，离不开党和国家的培养。做人，一定要懂得感恩，要赤诚报国。 1960年，从浙江大学毕业的林俊德参军入伍，从此隐姓埋名，成为">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://hicatalpa.cn/posts/%E6%AF%8F%E5%91%A8%E8%AE%AE%E8%AE%BA%E6%96%87%E7%B4%A0%E6%9D%90%E7%A7%AF%E7%B4%AF-4-%E2%80%94%E2%80%94%E6%9E%97%E4%BF%8A%E5%BE%B7%EF%BC%9A%E5%B0%86%E4%B8%80%E7%94%9F%E7%8C%AE%E7%BB%99%E7%A5%96%E5%9B%BD%E7%9A%84%E6%A0%B8%E4%BA%8B%E4%B8%9A%EF%BC%8C-%E5%8F%82%E4%B8%8E%E8%BF%8745%E6%AC%A1%E6%A0%B8%E8%AF%95%E9%AA%8C%E4%BB%BB%E5%8A%A1%EF%BC%8C%E5%8E%BB%E4%B8%96%E5%89%8D%E4%B8%80%E5%A4%A9%E8%BF%98%E5%B7%A5%E4%BD%9C/1.jpg">
+<meta property="og:image" content="https://hicatalpa.cn/posts/%E6%AF%8F%E5%91%A8%E8%AE%AE%E8%AE%BA%E6%96%87%E7%B4%A0%E6%9D%90%E7%A7%AF%E7%B4%AF-4-%E2%80%94%E2%80%94%E6%9E%97%E4%BF%8A%E5%BE%B7%EF%BC%9A%E5%B0%86%E4%B8%80%E7%94%9F%E7%8C%AE%E7%BB%99%E7%A5%96%E5%9B%BD%E7%9A%84%E6%A0%B8%E4%BA%8B%E4%B8%9A%EF%BC%8C-%E5%8F%82%E4%B8%8E%E8%BF%8745%E6%AC%A1%E6%A0%B8%E8%AF%95%E9%AA%8C%E4%BB%BB%E5%8A%A1%EF%BC%8C%E5%8E%BB%E4%B8%96%E5%89%8D%E4%B8%80%E5%A4%A9%E8%BF%98%E5%B7%A5%E4%BD%9C/2.jpg">
+<meta property="og:image" content="https://hicatalpa.cn/posts/%E6%AF%8F%E5%91%A8%E8%AE%AE%E8%AE%BA%E6%96%87%E7%B4%A0%E6%9D%90%E7%A7%AF%E7%B4%AF-4-%E2%80%94%E2%80%94%E6%9E%97%E4%BF%8A%E5%BE%B7%EF%BC%9A%E5%B0%86%E4%B8%80%E7%94%9F%E7%8C%AE%E7%BB%99%E7%A5%96%E5%9B%BD%E7%9A%84%E6%A0%B8%E4%BA%8B%E4%B8%9A%EF%BC%8C-%E5%8F%82%E4%B8%8E%E8%BF%8745%E6%AC%A1%E6%A0%B8%E8%AF%95%E9%AA%8C%E4%BB%BB%E5%8A%A1%EF%BC%8C%E5%8E%BB%E4%B8%96%E5%89%8D%E4%B8%80%E5%A4%A9%E8%BF%98%E5%B7%A5%E4%BD%9C/3.gif">
+<meta property="og:image" content="https://hicatalpa.cn/posts/%E6%AF%8F%E5%91%A8%E8%AE%AE%E8%AE%BA%E6%96%87%E7%B4%A0%E6%9D%90%E7%A7%AF%E7%B4%AF-4-%E2%80%94%E2%80%94%E6%9E%97%E4%BF%8A%E5%BE%B7%EF%BC%9A%E5%B0%86%E4%B8%80%E7%94%9F%E7%8C%AE%E7%BB%99%E7%A5%96%E5%9B%BD%E7%9A%84%E6%A0%B8%E4%BA%8B%E4%B8%9A%EF%BC%8C-%E5%8F%82%E4%B8%8E%E8%BF%8745%E6%AC%A1%E6%A0%B8%E8%AF%95%E9%AA%8C%E4%BB%BB%E5%8A%A1%EF%BC%8C%E5%8E%BB%E4%B8%96%E5%89%8D%E4%B8%80%E5%A4%A9%E8%BF%98%E5%B7%A5%E4%BD%9C/4.gif">
+<meta property="og:image" content="https://hicatalpa.cn/posts/%E6%AF%8F%E5%91%A8%E8%AE%AE%E8%AE%BA%E6%96%87%E7%B4%A0%E6%9D%90%E7%A7%AF%E7%B4%AF-4-%E2%80%94%E2%80%94%E6%9E%97%E4%BF%8A%E5%BE%B7%EF%BC%9A%E5%B0%86%E4%B8%80%E7%94%9F%E7%8C%AE%E7%BB%99%E7%A5%96%E5%9B%BD%E7%9A%84%E6%A0%B8%E4%BA%8B%E4%B8%9A%EF%BC%8C-%E5%8F%82%E4%B8%8E%E8%BF%8745%E6%AC%A1%E6%A0%B8%E8%AF%95%E9%AA%8C%E4%BB%BB%E5%8A%A1%EF%BC%8C%E5%8E%BB%E4%B8%96%E5%89%8D%E4%B8%80%E5%A4%A9%E8%BF%98%E5%B7%A5%E4%BD%9C/5.gif">
+<meta property="og:image" content="https://hicatalpa.cn/posts/%E6%AF%8F%E5%91%A8%E8%AE%AE%E8%AE%BA%E6%96%87%E7%B4%A0%E6%9D%90%E7%A7%AF%E7%B4%AF-4-%E2%80%94%E2%80%94%E6%9E%97%E4%BF%8A%E5%BE%B7%EF%BC%9A%E5%B0%86%E4%B8%80%E7%94%9F%E7%8C%AE%E7%BB%99%E7%A5%96%E5%9B%BD%E7%9A%84%E6%A0%B8%E4%BA%8B%E4%B8%9A%EF%BC%8C-%E5%8F%82%E4%B8%8E%E8%BF%8745%E6%AC%A1%E6%A0%B8%E8%AF%95%E9%AA%8C%E4%BB%BB%E5%8A%A1%EF%BC%8C%E5%8E%BB%E4%B8%96%E5%89%8D%E4%B8%80%E5%A4%A9%E8%BF%98%E5%B7%A5%E4%BD%9C/6.gif">
+<meta property="og:image" content="https://hicatalpa.cn/posts/%E6%AF%8F%E5%91%A8%E8%AE%AE%E8%AE%BA%E6%96%87%E7%B4%A0%E6%9D%90%E7%A7%AF%E7%B4%AF-4-%E2%80%94%E2%80%94%E6%9E%97%E4%BF%8A%E5%BE%B7%EF%BC%9A%E5%B0%86%E4%B8%80%E7%94%9F%E7%8C%AE%E7%BB%99%E7%A5%96%E5%9B%BD%E7%9A%84%E6%A0%B8%E4%BA%8B%E4%B8%9A%EF%BC%8C-%E5%8F%82%E4%B8%8E%E8%BF%8745%E6%AC%A1%E6%A0%B8%E8%AF%95%E9%AA%8C%E4%BB%BB%E5%8A%A1%EF%BC%8C%E5%8E%BB%E4%B8%96%E5%89%8D%E4%B8%80%E5%A4%A9%E8%BF%98%E5%B7%A5%E4%BD%9C/7.gif">
+<meta property="og:image" content="https://hicatalpa.cn/posts/%E6%AF%8F%E5%91%A8%E8%AE%AE%E8%AE%BA%E6%96%87%E7%B4%A0%E6%9D%90%E7%A7%AF%E7%B4%AF-4-%E2%80%94%E2%80%94%E6%9E%97%E4%BF%8A%E5%BE%B7%EF%BC%9A%E5%B0%86%E4%B8%80%E7%94%9F%E7%8C%AE%E7%BB%99%E7%A5%96%E5%9B%BD%E7%9A%84%E6%A0%B8%E4%BA%8B%E4%B8%9A%EF%BC%8C-%E5%8F%82%E4%B8%8E%E8%BF%8745%E6%AC%A1%E6%A0%B8%E8%AF%95%E9%AA%8C%E4%BB%BB%E5%8A%A1%EF%BC%8C%E5%8E%BB%E4%B8%96%E5%89%8D%E4%B8%80%E5%A4%A9%E8%BF%98%E5%B7%A5%E4%BD%9C/8.gif">
+<meta property="og:image" content="https://hicatalpa.cn/posts/%E6%AF%8F%E5%91%A8%E8%AE%AE%E8%AE%BA%E6%96%87%E7%B4%A0%E6%9D%90%E7%A7%AF%E7%B4%AF-4-%E2%80%94%E2%80%94%E6%9E%97%E4%BF%8A%E5%BE%B7%EF%BC%9A%E5%B0%86%E4%B8%80%E7%94%9F%E7%8C%AE%E7%BB%99%E7%A5%96%E5%9B%BD%E7%9A%84%E6%A0%B8%E4%BA%8B%E4%B8%9A%EF%BC%8C-%E5%8F%82%E4%B8%8E%E8%BF%8745%E6%AC%A1%E6%A0%B8%E8%AF%95%E9%AA%8C%E4%BB%BB%E5%8A%A1%EF%BC%8C%E5%8E%BB%E4%B8%96%E5%89%8D%E4%B8%80%E5%A4%A9%E8%BF%98%E5%B7%A5%E4%BD%9C/9.gif">
+<meta property="og:image" content="https://hicatalpa.cn/posts/%E6%AF%8F%E5%91%A8%E8%AE%AE%E8%AE%BA%E6%96%87%E7%B4%A0%E6%9D%90%E7%A7%AF%E7%B4%AF-4-%E2%80%94%E2%80%94%E6%9E%97%E4%BF%8A%E5%BE%B7%EF%BC%9A%E5%B0%86%E4%B8%80%E7%94%9F%E7%8C%AE%E7%BB%99%E7%A5%96%E5%9B%BD%E7%9A%84%E6%A0%B8%E4%BA%8B%E4%B8%9A%EF%BC%8C-%E5%8F%82%E4%B8%8E%E8%BF%8745%E6%AC%A1%E6%A0%B8%E8%AF%95%E9%AA%8C%E4%BB%BB%E5%8A%A1%EF%BC%8C%E5%8E%BB%E4%B8%96%E5%89%8D%E4%B8%80%E5%A4%A9%E8%BF%98%E5%B7%A5%E4%BD%9C/10.jpg">
+<meta property="article:published_time" content="2024-04-06T07:48:12.000Z">
+<meta property="article:modified_time" content="2024-04-13T11:52:17.336Z">
+<meta property="article:author" content="梓树">
+<meta property="article:tag" content="素材积累">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://hicatalpa.cn/posts/%E6%AF%8F%E5%91%A8%E8%AE%AE%E8%AE%BA%E6%96%87%E7%B4%A0%E6%9D%90%E7%A7%AF%E7%B4%AF-4-%E2%80%94%E2%80%94%E6%9E%97%E4%BF%8A%E5%BE%B7%EF%BC%9A%E5%B0%86%E4%B8%80%E7%94%9F%E7%8C%AE%E7%BB%99%E7%A5%96%E5%9B%BD%E7%9A%84%E6%A0%B8%E4%BA%8B%E4%B8%9A%EF%BC%8C-%E5%8F%82%E4%B8%8E%E8%BF%8745%E6%AC%A1%E6%A0%B8%E8%AF%95%E9%AA%8C%E4%BB%BB%E5%8A%A1%EF%BC%8C%E5%8E%BB%E4%B8%96%E5%89%8D%E4%B8%80%E5%A4%A9%E8%BF%98%E5%B7%A5%E4%BD%9C/1.jpg">
+  
+  
+    <meta name="referrer" content="no-referrer-when-downgrade">
+  
+  
+  <title>每周议论文素材积累(4)——林俊德：将一生献给祖国的核事业， 参与过45次核试验任务，去世前一天还工作 - Catalpa</title>
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
+
+
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/github-markdown-css/4.0.0/github-markdown.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/hint.css/2.7.0/hint.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.css" />
+
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+<!-- Do not modify the link that theme dependent icons -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1749284_hj8rtnfg7um.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_lbnruvf0jn.css">
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+
+  <link id="highlight-css" rel="stylesheet" href="/css/highlight.css" />
+  
+    <link id="highlight-css-dark" rel="stylesheet" href="/css/highlight-dark.css" />
+  
+
+
+
+
+  <script id="fluid-configs">
+    var Fluid = window.Fluid || {};
+    Fluid.ctx = Object.assign({}, Fluid.ctx)
+    var CONFIG = {"hostname":"hicatalpa.cn","root":"/","version":"1.9.4","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":true,"follow_dnt":false,"baidu":null,"google":null,"gtag":null,"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false}},"search_path":"/local-search.xml"};
+
+    if (CONFIG.web_analytics.follow_dnt) {
+      var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
+      Fluid.ctx.dnt = dntVal && (dntVal.startsWith('1') || dntVal.startsWith('yes') || dntVal.startsWith('on'));
+    }
+  </script>
+  <script  src="/js/utils.js" ></script>
+  <script  src="/js/color-schema.js" ></script>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+
+  
+<meta name="generator" content="Hexo 6.3.0"></head>
+
+
+<body>
+  
+
+  <header>
+    
+
+<div class="header-inner" style="height: 70vh;">
+  <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand" href="/">
+      <strong>hicatalpa.cn</strong>
+    </a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/">
+                <i class="iconfont icon-home-fill"></i>
+                <span></span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/archives/">
+                <i class="iconfont icon-archive-fill"></i>
+                <span></span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/links/">
+                <i class="iconfont icon-link-fill"></i>
+                <span></span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/about/">
+                <i class="iconfont icon-user-fill"></i>
+                <span></span>
+              </a>
+            </li>
+          
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" target="_self" href="javascript:;" data-toggle="modal" data-target="#modalSearch" aria-label="Search">
+              <i class="iconfont icon-search"></i>
+            </a>
+          </li>
+          
+        
+        
+          <li class="nav-item" id="color-toggle-btn">
+            <a class="nav-link" target="_self" href="javascript:;" aria-label="Color Toggle">
+              <i class="iconfont icon-dark" id="color-toggle-icon"></i>
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+  
+
+<div id="banner" class="banner" parallax=true
+     style="background: url('/img/default.png') no-repeat center center; background-size: cover;">
+  <div class="full-bg-img">
+    <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+      <div class="banner-text text-center fade-in-up">
+        <div class="h2">
+          
+            <span id="subtitle" data-typed-text="每周议论文素材积累(4)——林俊德：将一生献给祖国的核事业， 参与过45次核试验任务，去世前一天还工作"></span>
+          
+        </div>
+
+        
+          
+  <div class="mt-3">
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-author" aria-hidden="true"></i>
+        梓树
+      </span>
+    
+    
+      <span class="post-meta">
+        <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+        <time datetime="2024-04-06 15:48" pubdate>
+          April 6, 2024 pm
+        </time>
+      </span>
+    
+  </div>
+
+  <div class="mt-1">
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-chart"></i>
+        
+          1.6k 字
+        
+      </span>
+    
+
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-clock-fill"></i>
+        
+        
+        
+          13 分钟
+        
+      </span>
+    
+
+    
+    
+  </div>
+
+
+        
+      </div>
+
+      
+    </div>
+  </div>
+</div>
+
+</div>
+
+  </header>
+
+  <main>
+    
+      
+
+<div class="container-fluid nopadding-x">
+  <div class="row nomargin-x">
+    <div class="side-col d-none d-lg-block col-lg-2">
+      
+
+    </div>
+
+    <div class="col-lg-8 nopadding-x-md">
+      <div class="container nopadding-x-md" id="board-ctn">
+        <div id="board">
+          <article class="post-content mx-auto">
+            <!-- SEO header -->
+            <h1 style="display: none">每周议论文素材积累(4)——林俊德：将一生献给祖国的核事业， 参与过45次核试验任务，去世前一天还工作</h1>
+            
+            
+              <div class="markdown-body">
+                
+                <h1 id="原文再现"><a href="#原文再现" class="headerlink" title="原文再现"></a>原文再现</h1><p>林俊德，是一位将军，也是一位院士。<strong>他一辈子隐姓埋名，52年坚守在罗布泊，参与了中国全部的45次核试验任务。</strong></p>
+<p><img src="/posts/%E6%AF%8F%E5%91%A8%E8%AE%AE%E8%AE%BA%E6%96%87%E7%B4%A0%E6%9D%90%E7%A7%AF%E7%B4%AF-4-%E2%80%94%E2%80%94%E6%9E%97%E4%BF%8A%E5%BE%B7%EF%BC%9A%E5%B0%86%E4%B8%80%E7%94%9F%E7%8C%AE%E7%BB%99%E7%A5%96%E5%9B%BD%E7%9A%84%E6%A0%B8%E4%BA%8B%E4%B8%9A%EF%BC%8C-%E5%8F%82%E4%B8%8E%E8%BF%8745%E6%AC%A1%E6%A0%B8%E8%AF%95%E9%AA%8C%E4%BB%BB%E5%8A%A1%EF%BC%8C%E5%8E%BB%E4%B8%96%E5%89%8D%E4%B8%80%E5%A4%A9%E8%BF%98%E5%B7%A5%E4%BD%9C/1.jpg" srcset="/img/loading.gif" lazyload alt="林俊德（资料照片）新华社发"></p>
+<p>林俊德，1938年出生，福建永春人。1955年，17岁的他考入浙江大学机械系。由于家境贫穷，大学全是靠党和政府助学金读完的。为此，林俊德常对儿女们说，我能有今天，离不开党和国家的培养。做人，一定要懂得感恩，要赤诚报国。</p>
+<p>1960年，从浙江大学毕业的林俊德参军入伍，从此隐姓埋名，成为新中国核试验科研队伍中的一员。</p>
+<p>1964年10月16日15时，罗布泊一声巨响，蘑菇云腾空而起。林俊德研制的“林氏”压力自记仪，在我国第一颗核爆试验中首战立功。自此，作为功勋装备，它应用于各种高尖端武器试验之中，出现在试验场的各个角落。</p>
+<p>“我这辈子就干了一件事，核试验。咱们花钱不多，干事不少。搞科学实验，就要有一股子拼劲儿。”这是林俊德经常引以为豪的话。他担当10多项国防科研尖端课题研究，一年几乎有300多天都在大漠戈壁、试验场区度过。</p>
+<h2 id="“我不能躺下，躺下了，就起不来了-”"><a href="#“我不能躺下，躺下了，就起不来了-”" class="headerlink" title="“我不能躺下，躺下了，就起不来了!”"></a>“我不能躺下，躺下了，就起不来了!”</h2><p>2012年5月4日，林俊德被确诊为“胆管癌晚期”。从确诊到去世的27天时间里，他戴着氧气面罩、身上插着十多根管子，坐在临时搬进病房的办公桌前，对着笔记本电脑，一下一下地挪动着鼠标。</p>
+<p><img src="/posts/%E6%AF%8F%E5%91%A8%E8%AE%AE%E8%AE%BA%E6%96%87%E7%B4%A0%E6%9D%90%E7%A7%AF%E7%B4%AF-4-%E2%80%94%E2%80%94%E6%9E%97%E4%BF%8A%E5%BE%B7%EF%BC%9A%E5%B0%86%E4%B8%80%E7%94%9F%E7%8C%AE%E7%BB%99%E7%A5%96%E5%9B%BD%E7%9A%84%E6%A0%B8%E4%BA%8B%E4%B8%9A%EF%BC%8C-%E5%8F%82%E4%B8%8E%E8%BF%8745%E6%AC%A1%E6%A0%B8%E8%AF%95%E9%AA%8C%E4%BB%BB%E5%8A%A1%EF%BC%8C%E5%8E%BB%E4%B8%96%E5%89%8D%E4%B8%80%E5%A4%A9%E8%BF%98%E5%B7%A5%E4%BD%9C/2.jpg" srcset="/img/loading.gif" lazyload></p>
+<p>因为在他的电脑里，关系国家核心利益的技术文件，藏在几万个文件夹中。还有学生的毕业论文，他们快要答辩了，他不想耽误孩子们毕业。</p>
+<p>他放弃用手术延长寿命，选择与死神争分夺秒，1天、2天……一直拼到他生命的最后一天、最后一刻……</p>
+<p><img src="/posts/%E6%AF%8F%E5%91%A8%E8%AE%AE%E8%AE%BA%E6%96%87%E7%B4%A0%E6%9D%90%E7%A7%AF%E7%B4%AF-4-%E2%80%94%E2%80%94%E6%9E%97%E4%BF%8A%E5%BE%B7%EF%BC%9A%E5%B0%86%E4%B8%80%E7%94%9F%E7%8C%AE%E7%BB%99%E7%A5%96%E5%9B%BD%E7%9A%84%E6%A0%B8%E4%BA%8B%E4%B8%9A%EF%BC%8C-%E5%8F%82%E4%B8%8E%E8%BF%8745%E6%AC%A1%E6%A0%B8%E8%AF%95%E9%AA%8C%E4%BB%BB%E5%8A%A1%EF%BC%8C%E5%8E%BB%E4%B8%96%E5%89%8D%E4%B8%80%E5%A4%A9%E8%BF%98%E5%B7%A5%E4%BD%9C/3.gif" srcset="/img/loading.gif" lazyload></p>
+<p>2012年5月31日，林俊德病情再度恶化，生命进入倒计时，他9次要求、请求甚至哀求医生，同意自己下床工作。家人实在不忍心他最后一个愿望都不被满足，他才终于又坐在了电脑前。</p>
+<p>上午10点，已经工作了2个多小时的他，颤抖地对女儿说，C盘我做完了。</p>
+<p><img src="/posts/%E6%AF%8F%E5%91%A8%E8%AE%AE%E8%AE%BA%E6%96%87%E7%B4%A0%E6%9D%90%E7%A7%AF%E7%B4%AF-4-%E2%80%94%E2%80%94%E6%9E%97%E4%BF%8A%E5%BE%B7%EF%BC%9A%E5%B0%86%E4%B8%80%E7%94%9F%E7%8C%AE%E7%BB%99%E7%A5%96%E5%9B%BD%E7%9A%84%E6%A0%B8%E4%BA%8B%E4%B8%9A%EF%BC%8C-%E5%8F%82%E4%B8%8E%E8%BF%8745%E6%AC%A1%E6%A0%B8%E8%AF%95%E9%AA%8C%E4%BB%BB%E5%8A%A1%EF%BC%8C%E5%8E%BB%E4%B8%96%E5%89%8D%E4%B8%80%E5%A4%A9%E8%BF%98%E5%B7%A5%E4%BD%9C/4.gif" srcset="/img/loading.gif" lazyload></p>
+<p>他的手开始颤得握不住鼠标，眼睛也渐渐看不清东西。他几次问女儿：我的眼镜在哪儿？女儿说：眼镜戴着呢……</p>
+<p>此时，很多人痛哭起来，因为怕他听到，使劲捂着嘴巴。最后，还是他的老伴儿说了一句：医生想叫你休息一会儿！他则回答：坐着休息！</p>
+<p><img src="/posts/%E6%AF%8F%E5%91%A8%E8%AE%AE%E8%AE%BA%E6%96%87%E7%B4%A0%E6%9D%90%E7%A7%AF%E7%B4%AF-4-%E2%80%94%E2%80%94%E6%9E%97%E4%BF%8A%E5%BE%B7%EF%BC%9A%E5%B0%86%E4%B8%80%E7%94%9F%E7%8C%AE%E7%BB%99%E7%A5%96%E5%9B%BD%E7%9A%84%E6%A0%B8%E4%BA%8B%E4%B8%9A%EF%BC%8C-%E5%8F%82%E4%B8%8E%E8%BF%8745%E6%AC%A1%E6%A0%B8%E8%AF%95%E9%AA%8C%E4%BB%BB%E5%8A%A1%EF%BC%8C%E5%8E%BB%E4%B8%96%E5%89%8D%E4%B8%80%E5%A4%A9%E8%BF%98%E5%B7%A5%E4%BD%9C/5.gif" srcset="/img/loading.gif" lazyload></p>
+<p>而他接下来说的一句话，让在场所有人再一次掩面啜泣—— “坐着比躺着好啊，我不能躺下， 躺下了，就起不来了！”</p>
+<p><img src="/posts/%E6%AF%8F%E5%91%A8%E8%AE%AE%E8%AE%BA%E6%96%87%E7%B4%A0%E6%9D%90%E7%A7%AF%E7%B4%AF-4-%E2%80%94%E2%80%94%E6%9E%97%E4%BF%8A%E5%BE%B7%EF%BC%9A%E5%B0%86%E4%B8%80%E7%94%9F%E7%8C%AE%E7%BB%99%E7%A5%96%E5%9B%BD%E7%9A%84%E6%A0%B8%E4%BA%8B%E4%B8%9A%EF%BC%8C-%E5%8F%82%E4%B8%8E%E8%BF%8745%E6%AC%A1%E6%A0%B8%E8%AF%95%E9%AA%8C%E4%BB%BB%E5%8A%A1%EF%BC%8C%E5%8E%BB%E4%B8%96%E5%89%8D%E4%B8%80%E5%A4%A9%E8%BF%98%E5%B7%A5%E4%BD%9C/6.gif" srcset="/img/loading.gif" lazyload></p>
+<p>两个小时后，他终于累得再也支撑不住，在医护人员的搀扶下，林俊德回到了病床。</p>
+<p><img src="/posts/%E6%AF%8F%E5%91%A8%E8%AE%AE%E8%AE%BA%E6%96%87%E7%B4%A0%E6%9D%90%E7%A7%AF%E7%B4%AF-4-%E2%80%94%E2%80%94%E6%9E%97%E4%BF%8A%E5%BE%B7%EF%BC%9A%E5%B0%86%E4%B8%80%E7%94%9F%E7%8C%AE%E7%BB%99%E7%A5%96%E5%9B%BD%E7%9A%84%E6%A0%B8%E4%BA%8B%E4%B8%9A%EF%BC%8C-%E5%8F%82%E4%B8%8E%E8%BF%8745%E6%AC%A1%E6%A0%B8%E8%AF%95%E9%AA%8C%E4%BB%BB%E5%8A%A1%EF%BC%8C%E5%8E%BB%E4%B8%96%E5%89%8D%E4%B8%80%E5%A4%A9%E8%BF%98%E5%B7%A5%E4%BD%9C/7.gif" srcset="/img/loading.gif" lazyload></p>
+<p><img src="/posts/%E6%AF%8F%E5%91%A8%E8%AE%AE%E8%AE%BA%E6%96%87%E7%B4%A0%E6%9D%90%E7%A7%AF%E7%B4%AF-4-%E2%80%94%E2%80%94%E6%9E%97%E4%BF%8A%E5%BE%B7%EF%BC%9A%E5%B0%86%E4%B8%80%E7%94%9F%E7%8C%AE%E7%BB%99%E7%A5%96%E5%9B%BD%E7%9A%84%E6%A0%B8%E4%BA%8B%E4%B8%9A%EF%BC%8C-%E5%8F%82%E4%B8%8E%E8%BF%8745%E6%AC%A1%E6%A0%B8%E8%AF%95%E9%AA%8C%E4%BB%BB%E5%8A%A1%EF%BC%8C%E5%8E%BB%E4%B8%96%E5%89%8D%E4%B8%80%E5%A4%A9%E8%BF%98%E5%B7%A5%E4%BD%9C/8.gif" srcset="/img/loading.gif" lazyload></p>
+<p>这是林俊德生前最后的影像，他大口喘着气，眼神也暗淡下来，这一躺下后，他再也没能起来……</p>
+<p>几个小时之后，2012年5月31日20时15分，林俊德，这位让罗布泊发出45次巨大轰鸣的将军，永远地闭上了眼睛。</p>
+<p><img src="/posts/%E6%AF%8F%E5%91%A8%E8%AE%AE%E8%AE%BA%E6%96%87%E7%B4%A0%E6%9D%90%E7%A7%AF%E7%B4%AF-4-%E2%80%94%E2%80%94%E6%9E%97%E4%BF%8A%E5%BE%B7%EF%BC%9A%E5%B0%86%E4%B8%80%E7%94%9F%E7%8C%AE%E7%BB%99%E7%A5%96%E5%9B%BD%E7%9A%84%E6%A0%B8%E4%BA%8B%E4%B8%9A%EF%BC%8C-%E5%8F%82%E4%B8%8E%E8%BF%8745%E6%AC%A1%E6%A0%B8%E8%AF%95%E9%AA%8C%E4%BB%BB%E5%8A%A1%EF%BC%8C%E5%8E%BB%E4%B8%96%E5%89%8D%E4%B8%80%E5%A4%A9%E8%BF%98%E5%B7%A5%E4%BD%9C/9.gif" srcset="/img/loading.gif" lazyload></p>
+<h2 id="“死后将我埋在马兰”"><a href="#“死后将我埋在马兰”" class="headerlink" title="“死后将我埋在马兰”"></a>“死后将我埋在马兰”</h2><p><img src="/posts/%E6%AF%8F%E5%91%A8%E8%AE%AE%E8%AE%BA%E6%96%87%E7%B4%A0%E6%9D%90%E7%A7%AF%E7%B4%AF-4-%E2%80%94%E2%80%94%E6%9E%97%E4%BF%8A%E5%BE%B7%EF%BC%9A%E5%B0%86%E4%B8%80%E7%94%9F%E7%8C%AE%E7%BB%99%E7%A5%96%E5%9B%BD%E7%9A%84%E6%A0%B8%E4%BA%8B%E4%B8%9A%EF%BC%8C-%E5%8F%82%E4%B8%8E%E8%BF%8745%E6%AC%A1%E6%A0%B8%E8%AF%95%E9%AA%8C%E4%BB%BB%E5%8A%A1%EF%BC%8C%E5%8E%BB%E4%B8%96%E5%89%8D%E4%B8%80%E5%A4%A9%E8%BF%98%E5%B7%A5%E4%BD%9C/10.jpg" srcset="/img/loading.gif" lazyload></p>
+<p>1、计算机、保密柜清理<br>2、****技术（国家机密）<br>3、家人留言<br>4、（空）<br>5、马兰物品清理（宿舍、办公室）</p>
+<p>可死神留给他的时间太少了，5条提纲的内容没有完全填满，家人留言这一条完全是空白。</p>
+<p>临终前，他用虚弱的话语再三叮嘱：“死后将我埋在马兰。”对于林俊德院士来说，马兰是他奋斗一生的地方，是他永远的“家”。</p>
+<p>2012年央视《感动中国》给林俊德的颁奖词这样写道：<strong>大漠，烽烟，马兰。平沙莽莽黄入天，英雄埋名五十年。剑河风急云片阔，将军金甲夜不脱。战士自有战士的告别，你永远不会倒下！</strong></p>
+<p>（摘自公众号<a target="_blank" rel="noopener" href="https://mp.weixin.qq.com/s?__biz=MzIwNzU0MDg0MA==&mid=2247527184&idx=3&sn=27bf71a2a87410493447ec1b3eda014d&chksm=9712ec17a065650141017646c984effd912077e9eb7143661bb23aff92560bbd52b403390e3d&scene=27#wechat_redirect">“科普青岛”</a>）</p>
+<h1 id="素材示例"><a href="#素材示例" class="headerlink" title="素材示例"></a>素材示例</h1><p>林俊德一辈子隐姓埋名，52年坚守在罗布泊，参与了中国全部的45次核试验任务。被确诊为“胆管癌晚期”之后，直到去世的27天时间里，他戴着氧气面罩、身上插着十多根管子，坐在临时搬进病房的办公桌前，对着笔记本电脑，一下一下地挪动着鼠标。他放弃用手术延长寿命，选择与死神争分夺秒。在生命的最后几个小时，他颤抖地跟他女儿说：“C盘我做完了。”临终前，他用虚弱的话语再三叮嘱：“死后将我埋在马兰。”平沙莽莽黄入天，剑河风急云片阔，将军金甲夜不脱。这位将军，用自己的生命，诠释着“干惊天动地事，做隐姓埋名人”。</p>
+
+                
+              </div>
+            
+            <hr/>
+            <div>
+              <div class="post-metas my-3">
+  
+  
+    <div class="post-meta">
+      <i class="iconfont icon-tags"></i>
+      
+        <a href="/tags/%E7%B4%A0%E6%9D%90%E7%A7%AF%E7%B4%AF/">#素材积累</a>
+      
+    </div>
+  
+</div>
+
+
+              
+  
+
+  <div class="license-box my-3">
+    <div class="license-title">
+      <div>每周议论文素材积累(4)——林俊德：将一生献给祖国的核事业， 参与过45次核试验任务，去世前一天还工作</div>
+      <div>https://hicatalpa.cn/posts/每周议论文素材积累-4-——林俊德：将一生献给祖国的核事业，-参与过45次核试验任务，去世前一天还工作/</div>
+    </div>
+    <div class="license-meta">
+      
+        <div class="license-meta-item">
+          <div>作者</div>
+          <div>梓树</div>
+        </div>
+      
+      
+        <div class="license-meta-item license-meta-date">
+          <div>发布于</div>
+          <div>April 6, 2024</div>
+        </div>
+      
+      
+        <div class="license-meta-item license-meta-date">
+          <div>更新于</div>
+          <div>April 13, 2024</div>
+        </div>
+      
+      
+        <div class="license-meta-item">
+          <div>许可协议</div>
+          <div>
+            
+              
+              
+                <a target="_blank" href="https://creativecommons.org/licenses/by-sa/4.0/">
+                  <span class="hint--top hint--rounded" aria-label="BY - 署名">
+                    <i class="iconfont icon-by"></i>
+                  </span>
+                </a>
+              
+                <a target="_blank" href="https://creativecommons.org/licenses/by-sa/4.0/">
+                  <span class="hint--top hint--rounded" aria-label="SA - 相同方式共享">
+                    <i class="iconfont icon-sa"></i>
+                  </span>
+                </a>
+              
+            
+          </div>
+        </div>
+      
+    </div>
+    <div class="license-icon iconfont"></div>
+  </div>
+
+
+
+              
+                <div class="post-prevnext my-3">
+                  <article class="post-prev col-6">
+                    
+                    
+                  </article>
+                  <article class="post-next col-6">
+                    
+                    
+                      <a href="/posts/%E6%AF%8F%E5%91%A8%E8%AE%AE%E8%AE%BA%E6%96%87%E7%B4%A0%E6%9D%90%E7%A7%AF%E7%B4%AF-3-%E2%80%94%E2%80%94%E9%94%A1%E5%AE%89%C2%B7%E5%85%8B%E6%8B%89%E5%85%8B%E7%9A%84%E5%BC%BA%E8%80%85%E4%B9%8B%E8%B7%AF/" title="每周议论文素材积累(3)——锡安·克拉克的强者之路">
+                        <span class="hidden-mobile">每周议论文素材积累(3)——锡安·克拉克的强者之路</span>
+                        <span class="visible-mobile">下一篇</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
+                    
+                  </article>
+                </div>
+              
+            </div>
+
+            
+  
+  
+    <article id="comments" lazyload>
+      
+  <script type="text/javascript">
+    Fluid.utils.loadComments('#comments', function() {
+      var light = 'github-light';
+      var dark = 'github-dark';
+      var schema = document.documentElement.getAttribute('data-user-color-scheme');
+      if (schema === 'dark') {
+        schema = dark;
+      } else {
+        schema = light;
+      }
+      window.UtterancesThemeLight = light;
+      window.UtterancesThemeDark = dark;
+      var s = document.createElement('script');
+      s.setAttribute('src', 'https://utteranc.es/client.js');
+      s.setAttribute('repo', 'PeterCatalpa/hicatalpa.cn');
+      s.setAttribute('issue-term', 'pathname');
+      
+      s.setAttribute('label', 'utterances');
+      
+      s.setAttribute('theme', schema);
+      s.setAttribute('crossorigin', 'anonymous');
+      document.getElementById('comments').appendChild(s);
+    })
+  </script>
+  <noscript>Please enable JavaScript to view the comments</noscript>
+
+
+    </article>
+  
+
+
+          </article>
+        </div>
+      </div>
+    </div>
+
+    <div class="side-col d-none d-lg-block col-lg-2">
+      
+  <aside class="sidebar" style="margin-left: -1rem">
+    <div id="toc">
+  <p class="toc-header">
+    <i class="iconfont icon-list"></i>
+    <span>目录</span>
+  </p>
+  <div class="toc-body" id="toc-body"></div>
+</div>
+
+
+
+  </aside>
+
+
+    </div>
+  </div>
+</div>
+
+
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+
+
+
+
+    
+
+    
+      <a id="scroll-top-button" aria-label="TOP" href="#" role="button">
+        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+      </a>
+    
+
+    
+      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">搜索</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v" for="local-search-input">关键词</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    
+
+    
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+  
+    <div class="footer-content">
+       <a><span>Copyright</span></a> <i class="iconfont icon-copyright"></i> <a><span>2024 Catalpa</span></a> <div style="font-size: 0.85rem"> <span id="timeDate">载入天数...</span> <span id="times">载入时分秒...</span> <script src="/js/duration.js"></script> </div> 
+    </div>
+  
+  
+    <div class="statistics">
+  
+  
+
+  
+    
+      <span id="busuanzi_container_site_pv" style="display: none">
+        总访问量 
+        <span id="busuanzi_value_site_pv"></span>
+         次
+      </span>
+    
+    
+      <span id="busuanzi_container_site_uv" style="display: none">
+        总访客数 
+        <span id="busuanzi_value_site_uv"></span>
+         人
+      </span>
+    
+    
+  
+</div>
+
+  
+  
+  
+</div>
+
+  </footer>
+
+  <!-- Scripts -->
+  
+  <script  src="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.js" ></script>
+  <link  rel="stylesheet" href="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.css" />
+
+  <script>
+    NProgress.configure({"showSpinner":false,"trickleSpeed":100})
+    NProgress.start()
+    window.addEventListener('load', function() {
+      NProgress.done();
+    })
+  </script>
+
+
+<script  src="https://lib.baomitu.com/jquery/3.6.0/jquery.min.js" ></script>
+<script  src="https://lib.baomitu.com/twitter-bootstrap/4.6.1/js/bootstrap.min.js" ></script>
+<script  src="/js/events.js" ></script>
+<script  src="/js/plugins.js" ></script>
+
+
+  <script  src="https://lib.baomitu.com/typed.js/2.0.12/typed.min.js" ></script>
+  <script>
+    (function (window, document) {
+      var typing = Fluid.plugins.typing;
+      var subtitle = document.getElementById('subtitle');
+      if (!subtitle || !typing) {
+        return;
+      }
+      var text = subtitle.getAttribute('data-typed-text');
+      
+        typing(text);
+      
+    })(window, document);
+  </script>
+
+
+
+
+  
+    <script  src="/js/img-lazyload.js" ></script>
+  
+
+
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/tocbot/4.18.2/tocbot.min.js', function() {
+    var toc = jQuery('#toc');
+    if (toc.length === 0 || !window.tocbot) { return; }
+    var boardCtn = jQuery('#board-ctn');
+    var boardTop = boardCtn.offset().top;
+
+    window.tocbot.init(Object.assign({
+      tocSelector     : '#toc-body',
+      contentSelector : '.markdown-body',
+      linkClass       : 'tocbot-link',
+      activeLinkClass : 'tocbot-active-link',
+      listClass       : 'tocbot-list',
+      isCollapsedClass: 'tocbot-is-collapsed',
+      collapsibleClass: 'tocbot-is-collapsible',
+      scrollSmooth    : true,
+      includeTitleTags: true,
+      headingsOffset  : -boardTop,
+    }, CONFIG.toc));
+    if (toc.find('.toc-list-item').length > 0) {
+      toc.css('visibility', 'visible');
+    }
+
+    Fluid.events.registerRefreshCallback(function() {
+      if ('tocbot' in window) {
+        tocbot.refresh();
+        var toc = jQuery('#toc');
+        if (toc.length === 0 || !tocbot) {
+          return;
+        }
+        if (toc.find('.toc-list-item').length > 0) {
+          toc.css('visibility', 'visible');
+        }
+      }
+    });
+  });
+</script>
+
+
+  <script src=https://lib.baomitu.com/clipboard.js/2.0.11/clipboard.min.js></script>
+
+  <script>Fluid.plugins.codeWidget();</script>
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/anchor-js/4.3.1/anchor.min.js', function() {
+    window.anchors.options = {
+      placement: CONFIG.anchorjs.placement,
+      visible  : CONFIG.anchorjs.visible
+    };
+    if (CONFIG.anchorjs.icon) {
+      window.anchors.options.icon = CONFIG.anchorjs.icon;
+    }
+    var el = (CONFIG.anchorjs.element || 'h1,h2,h3,h4,h5,h6').split(',');
+    var res = [];
+    for (var item of el) {
+      res.push('.markdown-body > ' + item.trim());
+    }
+    if (CONFIG.anchorjs.placement === 'left') {
+      window.anchors.options.class = 'anchorjs-link-left';
+    }
+    window.anchors.add(res.join(', '));
+
+    Fluid.events.registerRefreshCallback(function() {
+      if ('anchors' in window) {
+        anchors.removeAll();
+        var el = (CONFIG.anchorjs.element || 'h1,h2,h3,h4,h5,h6').split(',');
+        var res = [];
+        for (var item of el) {
+          res.push('.markdown-body > ' + item.trim());
+        }
+        if (CONFIG.anchorjs.placement === 'left') {
+          anchors.options.class = 'anchorjs-link-left';
+        }
+        anchors.add(res.join(', '));
+      }
+    });
+  });
+</script>
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.js', function() {
+    Fluid.plugins.fancyBox();
+  });
+</script>
+
+
+  <script>Fluid.plugins.imageCaption();</script>
+
+  <script  src="/js/local-search.js" ></script>
+
+  <script defer src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" ></script>
+
+
+
+
+
+<!-- 主题的启动项，将它保持在最底部 -->
+<!-- the boot of the theme, keep it at the bottom -->
+<script  src="/js/boot.js" ></script>
+
+
+  
+
+  <noscript>
+    <div class="noscript-warning">博客在允许 JavaScript 运行的环境下浏览效果更佳</div>
+  </noscript>
+</body>
+</html>

@@ -15,6 +15,7 @@ const postsCollection = defineCollection({
 		/* For internal use */
 		prevTitle: z.string().default(""),
 		prevSlug: z.string().default(""),
+		pinned: z.boolean().optional().default(false),
 		nextTitle: z.string().default(""),
 		nextSlug: z.string().default(""),
 	}),

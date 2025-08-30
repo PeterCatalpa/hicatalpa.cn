@@ -4,6 +4,7 @@ tags: [YTdown,YouTube]
 category: 介绍
 draft: false
 published: 2025-08-23
+description: "YTdown是一个简单高效的YouTube视频下载工具，我愿称之为视频搬运工的绝活。"
 ---
 YTdown是一个简单高效的YouTube视频下载工具，我愿称之为视频搬运工的绝活。
 
